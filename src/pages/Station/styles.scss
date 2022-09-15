@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.backBtn {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: $main-padding;
+  cursor: pointer;
+}
+
+.stationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  span {
+    margin: 5px;
+  }
+
+  .audio {
+    margin-bottom: $main-padding;
+    border: 10px solid $primary-color;
+    border-radius: 50px;
+  }
+
+  .errorMessage {
+    color: red;
+  }
+}
+
+.loader {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

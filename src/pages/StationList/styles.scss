@@ -1,0 +1,34 @@
+@import "../../index.scss";
+
+.stationListPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $main-padding;
+
+  .title {
+    color: $primary-color;
+  }
+  .radioBtn {
+    cursor: pointer;
+    margin-bottom: $main-padding;
+  }
+}
+
+.station {
+  display: flex;
+  width: 70%;
+  margin: 10px 0 10px 0;
+  border-radius: $main-border-radius;
+  cursor: pointer;
+  background-color: #13d8cc42;
+
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+
+  .stationLogo {
+    margin-right: $main-padding;
+    border-radius: $main-border-radius;
+  }
+}

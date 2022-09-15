@@ -1,0 +1,33 @@
+@import "../../index.scss";
+
+.recommendations {
+  .divider {
+    margin: $main-padding;
+    border-top: 3px solid #bbb;
+  }
+  .title {
+    text-align: center;
+    margin: 0;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      margin: $main-padding;
+      cursor: pointer;
+
+      h4 {
+        margin: 0 0 5px 0;
+      }
+      img {
+        border-radius: $main-border-radius;
+      }
+    }
+  }
+}
